@@ -10,51 +10,99 @@
 </head>
 <body class="">
 
-    <div class="bg-hero-bg no-repeat bg-cover bg-center w-[100%] h-[95vh]">
-
-        <div class="flex px-4">
-            <a class="m-2.5 text-[25px] font-bold text-white ml-6" href="#">Food<span class="text-green-500">Court</a>
-             <nav class="mx-auto my-2 text-center h-14 p-2 text-white">
-                 <ul class="space-x-9 font-bold text-[20px]">
-                     <a class="hover:text-green-500 duration-500" href="#">Home</a>
-                     <a class="hover:text-green-500 duration-500" href="#">Menu</a>
-                     <a class="hover:text-green-500 duration-500" href="#">Events</a>
-                     <a class="hover:text-green-500 duration-500" href="#">Gallery</a>
-                     <a class="hover:text-green-500 duration-500" href="#">Contact</a>
-                     <a class="hover:text-green-500 duration-500" href="#">About</a>
-                 </ul>
-             </nav>
-
-             <div class="flex">
-                 
-                 <svg class="size-8 mt-6 mr-5 text-green-300 shover:scale-125" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                     <path strokeLinecap="round" strokeLinejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-                   </svg>
-                   <button class="bg-green-500 rounded-full px-2 py-2 text-white font-bold text-sm my-5 mr-5 hover:bg-white hover:text-green-500 duration-1000 hover:ring-2 ring-lime-600 cursor-pointer">Book a table</button>
-             </div>
-
-         </div>
+    <div class="bg-hero-bg no-repeat bg-cover bg-center w-lg[100%] h-[95vh] justify-between">
+        <div class="navbar bg-green-50 font-bold py-1">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <i class="fa-solid fa-bars text-black text-xl"></i>
+                </div>
+                <ul class="menu menu-sm dropdown-content z-10 text-xl mt-3 p-2 shadow bg-[#3c454d] text-white rounded-box w-52 ">
+                  <li><a href="#">Home</a></li>
+                  <li>
+                    <details>"
+                        <summary><a href="#">Our Cuisine</a></summary>
+                        <ul class="p-2">
+                            <li><a href="#">Italian</a></li>
+                            <li><a href="#">Japanese</a></li>
+                            <li><a href="#">Chinese</a></li>
+                            <li><a href="#">Thai</a></li>
+                            <li><a href="#">Spanish</a></li>
+                            <li><a href="#">Our Especial</a></li>
+                        </ul>
+                      </details>
+                  </li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <details>
+                    <summary><a href="#">Our branches</a></summary>
+                        <ul class="p-2 block absolute text-white bg-[#3c454d] h-52 w-32 mt-2.5 rounded-lg pt-6 space-y-3 z-10 text-sm pl-6">
+                            <li><a href="#">Feni</a></li>
+                            <li><a href="#">Dhaka</a></li>
+                            <li><a href="#">Sylhet</a></li>
+                            <li><a href="#">Chattogram</a></li>
+                        </ul>
+                  </details>
+                </ul>
+              </div>
+              <a href="#" class="text-2xl font-bold pl-4">Food<span class="text-green-500">Court</span></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="font-bold text-xl text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500"><a href="#">Home</a></li>
+                <li>
+                  <details>
+                    <summary class="font-bold text-xl text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500">Our Cuisine</summary>
+                    <ul class="p-2 z-10 bg-[#3c454d] text-white">
+                        <li><a href="#">Italian</a></li>
+                        <li><a href="#">Japanese</a></li>
+                        <li><a href="#">Chinese</a></li>
+                        <li><a href="#">Thai</a></li>
+                        <li><a href="#">Spanish</a></li>
+                        <li><a href="#">Our Especial</a></li>
+                      </ul>
+                  </details>
+                </li>
+                <li class="font-bold text-xl text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500"><a href="#">About us</a></li>
+                <li class="font-bold text-xl text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500"><a href="#">Contact us</a></li>
+              </ul>
+              <details>
+                <summary><a href="#" class="font-bold text-x text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500 py-3 px-5">Our branches</a></summary>
+                    <ul class="p-2 block absolute text-white bg-[#3c454d] h-52 w-32 mt-5 rounded-lg pt-6 space-y-3  z-10 text-sm pl-6">
+                        <li><a href="#">Feni</a></li>
+                        <li><a href="#">Dhaka</a></li>
+                        <li><a href="#">Sylhet</a></li>
+                        <li><a href="#">Chattogram</a></li>
+                    </ul>
+              </details>
+            </div>
+            <div class="navbar-end">
+              <button><a href="#" class="text-xs bg-green-400 text-white font-bold hover:bg-white hover:text-green-500 rounded-full duration-1000 py-2.5 mr-2 px-3 hover:ring-2 hover:ring-green-500">book a table</a></button>
+            </div>
+          </div>
+  
 
          <div class="fade-in-top flex flex-col items-center text-center text-white mt-12">
-             <h6 class="mt-8 text-yellow-200">ENJOY OUR HEALTHY & DELICIOUS FOOD</h6>
-             <h1 class="text-[80px]/[50px] font-bold">Treat Yourself</h1>
-             <p class="mt-12  text-gray-200 text-[20px]/[30px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit dolore euet dolore magna et dolore<br>
+             <h6 class="mt-6 text-green-300 text-[10px] md:text-xs lg:mt-20
+             ">ENJOY OUR HEALTHY & DELICIOUS FOOD</h6>
+             <h1 class="text-[60px]/[40px] font-bold">Treat Yourself</h1>
+             <p class="mt-12  text-gray-200 text-[15px]/[-50px]">
                  magna labore reprehenderit in voluptate velit esse cillum<br>
                  magna labore reprehenderit in voluptate velit esse<br>
                  sed do eiusmod.tempor incididunt ut irure in.</p>
             <button class="bg-green-500 rounded-full px-3 py-2.5 text-white font-bold text-sm my-8 hover:bg-white hover:text-green-500 duration-1000 hover:ring-2 ring-greebg-green-300 cursor-pointer">Order Now</button>    
          </div>
 
-         <div class="text-gray-500 space-x-2 float-right mr-8 mt-12">
-            <a href="#"><i class="fa-brands fa-instagram text-pink-600 font-bold bg-green-50 rounded-full text-base py-1 px-2 hover:scale-125 duration-300"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook text-blue-800 font-bold bg-green-50 rounded-full text-base py-1 px-2 hover:scale-125 duration-300"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter text-blue-800 font-bold bg-green-50 rounded-full text-base py-1 px-2 hover:scale-125 duration-300"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in text-blue-800 font-bold bg-green-50 rounded-full text-base py-1 px-2 hover:scale-125 duration-300"></i></a>
+         <div class="text-gray-50 md:space-x-2 float-right md:mr-6 mr-6 md:mt-10 mt-8 space-x-1 lg:mt-20">
+            <a href="#"><i class="fa-brands fa-instagram bg-bas text-pink-600 font-bold bg-green-50 rounded-full md:text-base text-xs py-1 px-1.5 md:px-2 hover:scale-125 duration-300"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook text-blue-800 font-bold bg-green-50 rounded-full md:text-base text-xs py-1 px-1.5 md:px-2 hover:scale-125 duration-300"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter text-blue-800 font-bold bg-green-50 rounded-full md:text-base text-xs py-1 px-1.5 md:px-2 hover:scale-125 duration-300"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in text-blue-800 font-bold bg-green-50 rounded-full md:text-base text-xs py-1 px-1.5 md:px-2 hover:scale-125 duration-300"></i></a>
         </div>
 
     </div>
 
-    <div class="h-[1090px] text-center flex flex-col bg-green-50">
+    <div class="h-[1130px] text-center flex flex-col bg-green-50">
 
         <div class="ourcuisine">
             <p class="text-5xl pt-12 font-bold text-green-500">Our Cuisine</p>
@@ -134,7 +182,7 @@
                     <a href="#" class="hover:text-green-500 duration-1000"><li>Feni Branch</li></a>
                     <a href="#" class="hover:text-green-500 duration-1000"><li>Dhaka Branch</li></a>
                     <a href="#" class="hover:text-green-500 duration-1000"><li>Sylhet Branch</li></a>
-                    <a href="#" class="hover:text-green-500 duration-1000"><li>ChattogramBranch</li></a>
+                    <a href="#" class="hover:text-green-500 duration-1000"><li>Chattogram Branch</li></a>
                     <a href="#" class="hover:text-green-500 duration-1000"><li>Cox's Bazar Branch</li></a>
                 </ul>
             </div>
@@ -149,4 +197,5 @@
     </footer>
     
 </body>
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </html>
