@@ -11,18 +11,20 @@
 <body class="">
 
     <div class="bg-hero-bg no-repeat bg-cover bg-center w-lg[100%] h-[95vh] justify-between">
+
+                                        <!-- for small device -->
         <div class="navbar bg-green-50 font-bold py-1">
             <div class="navbar-start">
               <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <i class="fa-solid fa-bars text-black text-xl"></i>
+                <div tabindex="0" role="button" class="ml-2 hover:text-white hover:bg-green-400 rounded-lg duration-500 px-4 py-3 lg:hidden">
+                    <i class="fa-solid fa-bars text-xl"></i>
                 </div>
                 <ul class="dropdown-content z-10 text-sm mt-3 p-2 shadow bg-green-100 border-2 text-green-500 rounded-box w-52 text-center">
                   <li class="hover:bg-green-500 py-1.5 px-3 hover:text-white hover:rounded-lg duration-500"><a href="#">Home</a></li>
                   <li>
                     <details>
-                        <summary class="list-none"><a href="#" class="hover:bg-green-500 py-1.5 px-14 hover:text-white hover:rounded-lg duration-500">Our Cuisine</a></summary>
-                        <ul class="p-2">
+                        <summary class="list-none cursor-pointer hover:bg-green-500 py-1.5 px-14 hover:text-white hover:rounded-lg duration-500 ">Our Cuisine<i class="fa-solid fa-circle-chevron-down absolute ml-2 mt-1"></i></summary>
+                        <ul class="text-center w-44 p-2 pt-5 absolute ml-44 bg-green-100 border-[3px] border-green-500 rounded-2xl h-64">
                             <li class="hover:bg-green-500 py-1.5 px-12 hover:text-white hover:rounded-lg duration-500"><a href="#">Italian</a></li>
                             <li class="hover:bg-green-500 py-1.5 px-12 hover:text-white hover:rounded-lg duration-500"><a href="#">Japanese</a></li>
                             <li class="hover:bg-green-500 py-1.5 px-12 hover:text-white hover:rounded-lg duration-500"><a href="#">Chinese</a></li>
@@ -35,8 +37,8 @@
                   <li class="hover:bg-green-500 py-1.5 px-12 hover:text-white hover:rounded-lg duration-500"><a href="#">About us</a></li>
                   <li class="hover:bg-green-500 py-1.5 px-12 hover:text-white hover:rounded-lg duration-500"><a href="#">Contact us</a></li>
                   <details>
-                    <summary class="list-none"><a href="#" class="hover:bg-green-500 py-1.5 px-12 hover:text-white hover:rounded-lg duration-500">Our branches</a></summary>
-                        <ul class="p-2 block absolute border-[3px] border-green-500 text-green-500 bg-green-100 h-52 w-40 -mt-8 rounded-lg pt-6 z-10 text-sm text-center ml-40">
+                    <summary class="list-none cursor-pointer hover:bg-green-500 py-1.5 px-12 hover:text-white hover:rounded-lg duration-500 text-left">Our branches<i class="fa-solid fa-circle-chevron-down absolute ml-2 mt-1"></i></summary>
+                        <ul class="p-2 block absolute border-[3px] border-green-500 text-green-500 bg-green-100 h-48 w-40 mt-1 rounded-2xl pt-6 z-10 text-sm text-center ml-40">
                             <li class="hover:bg-green-500 py-1.5 px-4 hover:text-white hover:rounded-lg duration-500" class="border-b-[3px] border-white"><a href="#">Feni</a></li>
                             <li class="hover:bg-green-500 py-1.5 px-4 hover:text-white hover:rounded-lg duration-500"><a href="#">Dhaka</a></li>
                             <li class="hover:bg-green-500 py-1.5 px-4 hover:text-white hover:rounded-lg duration-500"><a href="#">Sylhet</a></li>
@@ -47,40 +49,43 @@
               </div>
               <a href="#" class="text-2xl font-bold pl-4">Food<span class="text-green-500">Court</span></a>
             </div>
+
+                                        <!-- for large device -->
+
             <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li class="font-bold text-xl text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500"><a href="#">Home</a></li>
+              <ul class="menu-horizontal">
+                <li class="font-bold text-lg text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500 py-3 px-5"><a href="#">Home</a></li>
                 <li>
-                  <details class="">
-                    <summary class="font-bold text-xl text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500">Our Cuisine</summary>
-                    <ul class="p-2 z-10 bg-[#3c454d] text-white">
-                        <li><a href="#">Italian</a></li>
-                        <li><a href="#">Japanese</a></li>
-                        <li><a href="#">Chinese</a></li>
-                        <li><a href="#">Thai</a></li>
-                        <li><a href="#">Spanish</a></li>
-                        <li><a href="#">Our Especial</a></li>
+                  <details>
+                    <summary class="list-none cursor-pointer font-bold text-lg text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500 py-3 px-5 pr-11">Our Cuisine<i class="fa-solid fa-circle-chevron-down absolute ml-2 mt-1.5"></i></summary>
+                    <ul class="p-2 z-10 border-[3px] border-green-500 text-green-500 bg-green-100 h-60 w-40 text-center">
+                        <li class="hover:bg-green-500 py-1.5 px-4 hover:text-white hover:rounded-lg duration-500" class="border-b-[3px] border-white"><a href="#">Italian</a></li>
+                        <li class="hover:bg-green-500 py-1.5 px-4 hover:text-white hover:rounded-lg duration-500" class="border-b-[3px] border-white"><a href="#">Japanese</a></li>
+                        <li class="hover:bg-green-500 py-1.5 px-4 hover:text-white hover:rounded-lg duration-500" class="border-b-[3px] border-white"><a href="#">Chinese</a></li>
+                        <li class="hover:bg-green-500 py-1.5 px-4 hover:text-white hover:rounded-lg duration-500" class="border-b-[3px] border-white"><a href="#">Thai</a></li>
+                        <li class="hover:bg-green-500 py-1.5 px-4 hover:text-white hover:rounded-lg duration-500" class="border-b-[3px] border-white"><a href="#">Spanish</a></li>
+                        <li class="hover:bg-green-500 py-1.5 px-4 hover:text-white hover:rounded-lg duration-500" class="border-b-[3px] border-white"><a href="#">Our Especial</a></li>
                     </ul>
                   </details>
                 </li>
-                <li class="font-bold text-xl text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500"><a href="#">About us</a></li>
-                <li class="font-bold text-xl text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500"><a href="#">Contact us</a></li>
+                <li class="font-bold text-lg text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500 py-3 px-5"><a href="#">About us</a></li>
+                <li class="font-bold text-lg text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500 py-3 px-5"><a href="#">Contact us</a></li>
               </ul>
-              <details class="">
-                <summary><a href="#" class="font-bold text-x text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500 py-3 px-5">Our branches</a></summary>
-                    <ul class="p-2 block absolute text-white bg-[#3c454d] h-52 w-32 mt-5 rounded-lg pt-6 space-y-3 z-10 text-sm pl-6">
-                        <li><a href="#">Feni</a></li>
-                        <li><a href="#">Dhaka</a></li>
-                        <li><a href="#">Sylhet</a></li>
-                        <li><a href="#">Chattogram</a></li>
-                    </ul>
+              <details>
+                <summary class="list-none cursor-pointer font-bold text-lg text-green-500 hover:bg-green-500 hover:text-white hover:font-bold hover:rounded-lg duration-500 py-3 px-5 pr-11">Our branches<i class="fa-solid fa-circle-chevron-down absolute ml-2 mt-1.5"></i></summary>
+                <ul class="p-2 block absolute border-[3px] border-green-500 text-green-500 bg-green-100 h-52 w-40 mt-3 rounded-lg pt-6 z-10 text-sm text-center">
+                    <li class="hover:bg-green-500 py-1.5 px-4 hover:text-white hover:rounded-lg duration-500" class="border-b-[3px] border-white"><a href="#">Feni</a></li>
+                    <li class="hover:bg-green-500 py-1.5 px-4 hover:text-white hover:rounded-lg duration-500"><a href="#">Dhaka</a></li>
+                    <li class="hover:bg-green-500 py-1.5 px-4 hover:text-white hover:rounded-lg duration-500"><a href="#">Sylhet</a></li>
+                    <li class="hover:bg-green-500 py-1.5 px-4 hover:text-white hover:rounded-lg duration-500"><a href="#">Chattogram</a></li>
+                </ul>
               </details>
             </div>
             <div class="navbar-end">
               <button><a href="#" class="text-xs bg-green-400 text-white font-bold hover:bg-white hover:text-green-500 rounded-full duration-1000 py-2.5 mr-2 px-3 hover:ring-2 hover:ring-green-500">book a table</a></button>
             </div>
           </div>
-  
+                                <!-- Treat yourself section -->
 
          <div class="fade-in-top flex flex-col items-center text-center text-white mt-12">
              <h6 class="mt-6 text-green-300 text-[10px] md:text-xs lg:mt-20
@@ -92,8 +97,8 @@
                  sed do eiusmod.tempor incididunt ut irure in.</p>
             <button class="bg-green-500 rounded-full px-3 py-2.5 text-white font-bold text-sm my-8 hover:bg-white hover:text-green-500 duration-1000 hover:ring-2 ring-greebg-green-300 cursor-pointer">Order Now</button>    
          </div>
-
-         <div class="text-gray-50 md:space-x-2 float-right md:mr-6 mr-6 md:mt-10 mt-8 space-x-1 lg:mt-20">
+                                        <!-- social media links -->
+         <div class="text-gray-50 md:space-x-2 float-right mt-20 mr-4 space-x-1 lg:mt-20 lg:mr-6">
             <a href="#"><i class="fa-brands fa-instagram bg-bas text-pink-600 font-bold bg-green-50 rounded-full md:text-base text-xs py-1 px-1.5 md:px-2 hover:scale-125 duration-300"></i></a>
             <a href="#"><i class="fa-brands fa-facebook text-blue-800 font-bold bg-green-50 rounded-full md:text-base text-xs py-1 px-1.5 md:px-2 hover:scale-125 duration-300"></i></a>
             <a href="#"><i class="fa-brands fa-twitter text-blue-800 font-bold bg-green-50 rounded-full md:text-base text-xs py-1 px-1.5 md:px-2 hover:scale-125 duration-300"></i></a>
@@ -110,7 +115,7 @@
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute<br> irure dolor in reprehenderit in voluptate velit esse
                 cillum dolore eu fugiat nulla pariatur.Excepteur sint<br> occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
-
+                                        <!-- card section 1 -->
         <div class="w-full h-[500px] flex flex-row gap-3 group first-card">
             <div class="w-[20%] h-[90%] shadow-xl bg-white mt-4 ml-20 rounded-lg group-hover:blur-sm hover:!blur-none group-hover:scale-[0.80] hover:!scale-100 duration-1000">
                 <img src="img/1.jpeg" class="mt-2.5 ml-[5%] rounded-lg w-[90%] h-[50%]">
@@ -137,6 +142,7 @@
                 <button class="bg-green-500 rounded-full px-12 py-2 text-white font-bold text-sm mt-1 hover:bg-white hover:text-green-500 duration-1000 hover:ring-1 ring-green-500 cursor-pointer">Order Now</button>    
             </div>
         </div>
+                                                <!-- card section 2 -->
         <div class="w-full h-[500px] flex flex-row gap-3 group">
             <div class="w-[20%] h-[80%] shadow-md bg-white ml-20 rounded-lg group-hover:blur-sm hover:!blur-none group-hover:scale-[0.80] hover:!scale-100 duration-1000">
                 <img src="img/g12.jpg" class="mt-2.5 ml-[5%] rounded-lg w-[90%] h-[50%]">
@@ -164,8 +170,7 @@
             </div>
         </div>
     </div>
-
-    </div>
+                        <!-- footer section -->
     <footer class="w-full h-[300px] bg-[#3c454d] ">
 
         <div class="h-[230px] flex flex-row items-center ">
