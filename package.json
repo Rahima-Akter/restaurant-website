@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "vite"
+    "start": "vite",
+    "build": "tailwindcss -i tailwind.css -o ./css/tailswind.min.css --minify",
+    "watch":"tailwindcss -i tailwind.css -o ./css/tailswind.min.css --watch"
   },
   "keywords": [],
   "author": "",
