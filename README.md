@@ -1,2 +1,2 @@
 # restaurant-website
-This is my second practice website using Tailwind Framwork
+This is my second practice website using Tailwind Framwork (responsive)
